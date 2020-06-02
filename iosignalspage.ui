@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IOSignalsPage</class>
+ <widget class="QWidget" name="IOSignalsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: rgb(51,153,255);
+}
+
+QLabel
+{
+background-color:white;
+border:1px solid black;
+font:12px &quot;SimHei&quot;;
+color:white;
+}
+
+QPushButton
+{
+background-color: rgb(51,153,255);
+border:3px solid white;
+color:white;
+outline: none;
+}
+
+QTableWidget
+{
+background-color: white;
+font:12px &quot;SimHei&quot;;
+  color:black;
+}
+
+QTableWidget::item
+{
+	border-right:1px solid black ;
+}</string>
+  </property>
+  <widget class="QLabel" name="labelNavigator">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>460</y>
+     <width>800</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51,153,255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRIOM1">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;
+color:black;
+background-color:white;
+</string>
+   </property>
+   <property name="text">
+    <string>RIOM1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRIOM2">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;</string>
+   </property>
+   <property name="text">
+    <string>RIOM2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRIOM3">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;</string>
+   </property>
+   <property name="text">
+    <string>RIOM3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRIOM4">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;</string>
+   </property>
+   <property name="text">
+    <string>RIOM4</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRIOM5">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;</string>
+   </property>
+   <property name="text">
+    <string>RIOM5</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRIOM6">
+   <property name="geometry">
+    <rect>
+     <x>505</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;</string>
+   </property>
+   <property name="text">
+    <string>RIOM6</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPrePage">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>400</y>
+     <width>98</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px &quot;SimHei&quot;;
+border-image: url(:/image/buttonUP.jpg);
+color:black;
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>上一页</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNextPage">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>400</y>
+     <width>98</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px &quot;SimHei&quot;;
+border-image: url(:/image/buttonUP.jpg);
+color:black;
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>下一页</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>400</y>
+     <width>98</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px &quot;SimHei&quot;;
+border-image: url(:/image/buttonUP.jpg);
+color:black;
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPage">
+   <property name="geometry">
+    <rect>
+     <x>507</x>
+     <y>400</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51,153,255);
+font:20px &quot;SimHei&quot;;
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>1/2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDI1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>DI1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDI2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>DI2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDO1">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>DO1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDO2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>DO2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelAX">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>AX</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnERM1">
+   <property name="geometry">
+    <rect>
+     <x>605</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ERM1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnERM2">
+   <property name="geometry">
+    <rect>
+     <x>705</x>
+     <y>468</y>
+     <width>90</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+font: 20pt &quot;SimHei&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ERM2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPWM">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>PWM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelERMDO">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>DO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelAIO">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>AIO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelERMDI">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(225,250,251);
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>DI</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DCDCPage</class>
+ <widget class="QWidget" name="DCDCPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: rgb(51,153,255);
+}
+
+QLabel
+{
+background-color:rgb(51,153,255);
+border:0px;
+font:15px &quot;SimHei&quot;;
+color:white;
+}
+
+QPushButton
+{
+outline:none;
+border-image: url(:/image/buttonUP.jpg);
+font:20px, &quot;SimHei&quot;;
+color:rgb(0, 32, 96);
+border-radius:2px;
+}
+
+QPushButton:disabled
+{
+outline:none;
+border:1px solid white;
+border-image: url(:/image/buttonUP.jpg);
+font:16px, &quot;SimHei&quot;;
+color:rgb(180, 180, 180);
+border-radius:2px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnDcdcReset1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DCDC复位1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDcdcReset2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>290</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DCDC复位2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDcdcCut2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>290</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DCDC切除2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDcdcCut1">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>290</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DCDC切除1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>310</y>
+     <width>80</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>330</y>
+     <width>121</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按下后1s自动恢复</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>330</y>
+     <width>201</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按下持续有效，再次点击恢复</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

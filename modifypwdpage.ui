@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModifyPwdPage</class>
+ <widget class="QWidget" name="ModifyPwdPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: rgb(51,153,255);
+}
+
+QLabel
+{
+border:1px solid black;
+font:15px &quot;SimHei&quot;;
+color:black;
+}
+
+QPushButton
+{
+outline:none;
+font:20px, &quot;SimHei&quot;;
+color:white;
+border:3px solid white;
+background-color:rgb(51,153,255);
+}</string>
+  </property>
+  <widget class="QLabel" name="labelErrorInfo">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>365</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51,153,255);
+border:0px;
+font:20px ,&quot;SimHei&quot;;
+color:red;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>105</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51,153,255);
+border:0px;
+font:20px ,&quot;SimHei&quot;;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>原密码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>195</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51,153,255);
+border:0px;
+font:20px ,&quot;SimHei&quot;;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>新密码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>285</y>
+     <width>130</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51,153,255);
+border:0px;
+font:20px ,&quot;SimHei&quot;;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>重复新密码</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOld">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>105</y>
+     <width>260</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNew">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>195</y>
+     <width>260</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRepeat">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>285</y>
+     <width>260</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pwdConfirm">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>105</y>
+     <width>35</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+background-color: rgb(51,153,255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

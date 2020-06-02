@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MendModePage</class>
+ <widget class="QWidget" name="MendModePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+
+{
+	background-color: rgb(51,153,255);
+}
+
+QLabel
+{
+border:1px solid black;
+font:15px , &quot;SimHei&quot;;
+color:black;
+}
+QPushButton
+{
+outline:none;
+font:25px, &quot;SimHei&quot;;
+border-image: url(:/image/buttonUP.jpg);
+color:rgb(0, 32, 96);
+}
+
+QPushButton:disabled
+{
+outline:none;
+border:1px solid white;
+border-image: url(:/image/buttonUP.jpg);
+font:25px, &quot;SimHei&quot;;
+color:rgb(180, 180, 180);
+border-radius:2px;
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="labelMendIcon">
+   <property name="geometry">
+    <rect>
+     <x>151</x>
+     <y>201</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/fault.png);
+background-color: rgb(255, 255, 255);
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnMendCancel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>205</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/buttonUP.jpg);
+color:rgb(0, 32, 96);</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>280</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+color:red;
+font:17px;</string>
+   </property>
+   <property name="text">
+    <string>1.检修模式下禁止升弓
+2.十分钟内禁止操作2次</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnMendOk">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>205</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/buttonUP.jpg);
+color:rgb(0, 32, 96);</string>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnMend">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>140</y>
+     <width>281</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>进入检修模式</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMendInfo">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>200</y>
+     <width>511</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font:22px;
+color:red;</string>
+   </property>
+   <property name="text">
+    <string>      请确保列车处于降弓状态</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>390</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <zorder>labelMendInfo</zorder>
+  <zorder>labelMendIcon</zorder>
+  <zorder>btnMendCancel</zorder>
+  <zorder>label_3</zorder>
+  <zorder>btnMendOk</zorder>
+  <zorder>btnMend</zorder>
+  <zorder>btnBack</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

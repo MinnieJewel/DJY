@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingPage</class>
+ <widget class="QWidget" name="SettingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: rgb(51,153,255);
+}
+
+QLabel
+{
+background-color: rgb(51,153,255);
+border:0px;
+font:18px &quot;SimHei&quot;;
+color:white;
+}
+
+QPushButton
+{
+outline:none;
+border-image: url(:/image/buttonUP.jpg);
+font:25px, &quot;SimHei&quot;;
+color:rgb(0, 32, 96);
+border-radius:2px;
+}
+
+QPushButton:disabled
+{
+outline:none;
+border:1px solid white;
+border-image: url(:/image/buttonUP.jpg);
+font:25px, &quot;SimHei&quot;;
+color:rgb(180, 180, 180);
+border-radius:2px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnSetTime">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>时间设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSetAircondition">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>30</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>空调设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSetDCDC">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>30</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DCDC设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSetTraction">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>30</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>牵引设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSetVehicleNo">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>110</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车号线路号</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTractMode">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>190</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>过牵引模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnHeat">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>260</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>后视镜加热</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnWash">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>190</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>洗车模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLight">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>110</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>指示灯测试</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnMend">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>190</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>检修模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTrainBack">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>320</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车辆回场</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSetL">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>110</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>亮度调节</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPISTest">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>110</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>PIS测试</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnFactorySet">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>190</y>
+     <width>130</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>出厂设置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
